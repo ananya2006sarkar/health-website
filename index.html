@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zenith - Your Wellness Companion</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <h1>🌿 Zenith</h1>
+    <p>Your Physical & Mental Health Companion</p>
+  </header>
+
+  <main>
+    <!-- Avatar Creator -->
+    <section id="avatar">
+      <h2>Create Your Avatar</h2>
+      <div class="avatar-preview">
+        <img id="skin" src="images/skin1.png">
+        <img id="hair" src="images/hair1.png">
+        <img id="clothes" src="images/clothes1.png">
+      </div>
+      <div class="avatar-controls">
+        <select id="skinSelect">
+          <option value="skin1.png">Light</option>
+          <option value="skin2.png">Medium</option>
+          <option value="skin3.png">Dark</option>
+        </select>
+        <select id="hairSelect">
+          <option value="hair1.png">Short</option>
+          <option value="hair2.png">Long</option>
+        </select>
+        <select id="clothesSelect">
+          <option value="clothes1.png">T-shirt</option>
+          <option value="clothes2.png">Hoodie</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Calorie Tracker -->
+    <section id="calories">
+      <h2>🍎 Calorie Tracker</h2>
+      <input type="text" id="foodInput" placeholder="Enter food (e.g. Apple)">
+      <button onclick="getCalories()">Check Calories</button>
+      <p id="calorieResult"></p>
+    </section>
+
+    <!-- BMI Calculator -->
+    <section id="bmi">
+      <h2>⚖️ BMI Calculator</h2>
+      <input type="number" id="weight" placeholder="Weight (kg)">
+      <input type="number" id="height" placeholder="Height (cm)">
+      <button onclick="calculateBMI()">Calculate</button>
+      <p id="bmiResult"></p>
+    </section>
+
+    <!-- Water Reminder -->
+    <section id="water">
+      <h2>💧 Water Tracker</h2>
+      <input type="number" id="waterGoal" placeholder="Daily goal (ml)">
+      <input type="number" id="waterIntake" placeholder="Add intake (ml)">
+      <button onclick="addWater()">Add</button>
+      <p id="waterResult"></p>
+    </section>
+
+    <!-- Sleep Reminder -->
+    <section id="sleep">
+      <h2>🌙 Sleep Reminder</h2>
+      <input type="time" id="sleepTime">
+      <button onclick="setSleepReminder()">Set Reminder</button>
+      <p id="sleepResult"></p>
+    </section>
+
+    <!-- Pedometer -->
+    <section id="steps">
+      <h2>👟 Pedometer</h2>
+      <input type="number" id="stepInput" >
+      <button onclick="calculateCaloriesBurned()">Check Calories Burned</button>
+      <div class="footsteps">👣👣👣</div>
+      <p id="stepsResult"></p>
+    </section>
+
+    <!-- Joyful Activities -->
+    <section id="joy">
+      <h2>😊 Joyful Activity</h2>
+      <input type="text" id="joyInput" >
+      <button onclick="addJoy()">Add</button>
+      <ul id="joyList">
+        <li>Read a book 📚</li>
+        <li>Walk in the park 🌳</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Zenith © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- Chatbot Widget -->
+<script async src="chat-widget.js"></script>
+
+</body>
+</html>

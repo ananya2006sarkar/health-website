@@ -1,0 +1,112 @@
+/* Color palette */
+:root {
+  --green: #ccd5ae;
+  --cream: #e9edc9;
+  --offwhite: #fefae0;
+  --beige: #faedcd;
+  --brown: #d4a373;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--offwhite);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: var(--green);
+  color: white;
+}
+
+main {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+section {
+  background: var(--cream);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease-in;
+}
+
+h2 {
+  color: var(--brown);
+}
+
+button {
+  background: var(--brown);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius:0cqb;
+  cursor: pointer;
+}
+button:hover {
+  background: #b08968;
+}
+
+.footsteps {
+  font-size: 2rem;
+  margin-top: 10px;
+  animation: walk 2s infinite linear;
+}
+
+@keyframes walk {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(20px); }
+}
+
+.avatar-preview {
+  position: relative;
+  width: 150px;
+  height: 300px;
+  margin: auto;
+}
+.avatar-preview img {
+  position: absolute;
+  width: 100%;
+}
+button {
+  border-radius:0cqb; /* makes it pill-shaped */
+}
+
+input {
+  width: 70%;
+  padding: 10px 1px;
+  margin: 6px 0;
+  border: 2px solid var(--green);
+  border-radius: 25px; /* rounded shape */
+  background: var(--offwhite);
+  font-size: 1rem;
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* When user clicks inside */
+input:focus {
+  border-color: var(--brown);
+  box-shadow: 0 0 8px rgba(212,163,115,0.5);
+}
+
+/* Placeholder text inside */
+input::placeholder {
+  color: #a89f91; /* muted earthy tone */
+
+}
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 70;
+}
